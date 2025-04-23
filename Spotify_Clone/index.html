@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Your Favourite Music is here</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <ul>
+          <li class="brand">
+            <img src="logo.png" alt="Spotify-Logo" />Spotify
+          </li>
+          <li>Home</li>
+          <li>About</li>
+          <li class="menu-toggle"><i class="fas fa-bars"></i></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="song-list">
+        <h1>Best of NCS - No Copyright Sounds</h1>
+        <div class="songItem-container">
+          <div class="songItem">
+            <img src="./covers/1.jpg" alt="Album cover" />
+            <span class="songName">Song Name</span>
+            <span class="songlistplay">
+              <span class="timestamp">
+                00:00 <i class="fa-regular fa-circle-play play-icon"></i>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="song-banner"></div>
+      <div class="bottom">
+        <input
+          type="range"
+          name="range"
+          id="myProgressBar"
+          min="0"
+          max="100"
+          value="0"
+        />
+        <div class="player-controls">
+          <div class="icons">
+            <i class="fa-solid fa-shuffle" id="shuffle"></i>
+            <i class="fa-solid fa-backward-step" id="previous"></i>
+            <i class="fa-regular fa-circle-play" id="masterPlay"></i>
+            <i class="fa-solid fa-forward-step" id="next"></i>
+            <i class="fa-solid fa-repeat" id="repeat"></i>
+          </div>
+          <div class="songInfo">
+            <img src="playing.gif" alt="playing-gif" id="gif" />
+            <span id="masterSongName">Let Me Love You - Justin Bieber</span>
+            <span id="timeDisplay">0:00 / 0:00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
